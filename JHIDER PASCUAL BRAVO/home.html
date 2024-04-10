@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMANATION </title>
+    <link rel="stylesheet" href="STYLE2.0.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="boton.css">
+    
+</head>
+<html>
+
+</body >
+
+<center>
+<ul id="nav">
+    <li class="logo">
+        <img src="escudo.gif" alt="" height="100" width="100">
+    </li>
+    <li class="current">
+    <li><a href="home.html">home</a>
+      <li><a href="nosotros.html">nosotros</a></li>
+    <li><a href="#">personal</a>
+    <ul><a href="directivos.html">directivos</a>
+    <a href="docentes.html">docentes</a></ul></li>
+    
+  
+    <li>
+        <div class="row">
+          <div class="col text-center">
+            <label id="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+       </li>
+</ul>
+</center>
+<img src="inicio,,.png" alt="" width="100%" height="400">
+<center>
+<li class="logos">
+  <img src="logo1.png" alt="" width="100" height="100"> <img src="logo2.png" alt="" width="100" height="100"> <img src="logo3.png" alt="" width="100" height="100"  >
+</li>
+</center>
+<script>
+  const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+  function cambiaTema(ev){
+      if(ev.target.checked){
+          document.documentElement.setAttribute('tema', 'light');
+      } else {
+          document.documentElement.setAttribute('tema', 'dark');
+      }
+  }
+  colorSwitch.addEventListener('change', cambiaTema);
+</script>
+
+</body>
+
+</html>

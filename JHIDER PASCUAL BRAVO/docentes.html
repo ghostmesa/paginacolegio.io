@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docentes</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="boton.css">
+    <link rel="stylesheet" href="docente22.css">
+</head>
+<body>
+    <center>
+        <ul id="nav">
+            <li class="logo">
+                <img src="escudo.gif" alt="" height="100" width="100">
+            </li>
+            <li class="current">
+            <li><a href="home.html">home</a>
+              <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="#">personal</a>
+            <ul><a href="directivos.html">directivos</a>
+            <a href="docentes.html">docentes</a></ul></li>
+            
+          
+            <li>
+                <div class="row">
+                  <div class="col text-center">
+                    <label id="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+               </li>
+        
+        </ul>
+        <center>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen1.jpeg" alt=""  height="100" width="200">
+                </div>
+                <div class="pie">
+                    <p> liliana stella londoño saldarriaga </p>
+                         <p>Docente</p> 
+                        <p> especialista en derechos humanos y gestión de la educación</p>
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen2.jpeg" alt=""  height="150" width="100">
+                </div>
+                <div class="pie">
+                    <p> Daniela Jaramillo Yepez</p>
+                         <p>Docente</p> 
+                        <p> Licenciada en literatura y lengua castellana</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen3.jpeg" alt="" height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Gloria Elena Aristizábal Pérez</p>
+                    <p>Docente</p> 
+                   <p> Bachiller en artes aplicadas, Arquitecta de Universidad Nacional</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen4.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p>Claudia Elena Isaza Graciano</p>
+                    <p>Docente</p> 
+                   <p> Ingeniera agrónoma,Magíster en ciencias exactas y naturales</p>
+                
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen5.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Fabio Alexander Vargar Ríos</p>
+                    <p>Docente lengua castellana</p> 
+                   <p>  maestría en ciencias de educación lincenciatura en filosofia</p>
+                
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen6.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Lida Yaneth Vélez espinosa</p>
+                    <p>Docente</p> 
+                   <p> Ingeniería electrónica, Ingeniería administrativa</p>
+                
+                </div>
+            </div>
+            
+
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen7.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Sergio Andrés Martínez Salazar</p>
+                    <p> Docente de ciencias naturales</p> 
+                   <p> Licenciatura en física y Ingenieria civil</p>
+                
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen8.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Elías Otálora</p>
+                    <p> Docente de educacion fisica</p> 
+                   <p> PTC, Especialización en pedagogía de la lúdica</p>
+                
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+        <img src="imagen9.jpeg" alt=""  height="150" width="200">
+                </div>
+                <div class="pie">
+                    <p> Carlos Mario Cárdenas Mazenet</p>
+                    <p> Docente de matematicas</p> 
+                   <p> Licenciatura en matemáticas y física,Posgrado en matemáticas</p>
+                
+                </div>
+            </div>
+        
+        <script>
+            const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+            function cambiaTema(ev){
+                if(ev.target.checked){
+                    document.documentElement.setAttribute('tema', 'light');
+                } else {
+                    document.documentElement.setAttribute('tema', 'dark');
+                }
+            }
+            colorSwitch.addEventListener('change', cambiaTema);
+        </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background: none repeat scroll 0 0 #0d95e4; /*Fondo*/
+    color: rgb(255, 247, 247);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+a {
+    color: #020070;
+}
+
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fffbfb;         
+    font-size:larger ;
+}
+
+#nav {
+    background:repeat-x scroll 100px #0e66eb;
+    border-radius: 1em 1em 1em 1em;
+    line-height: 50%;
+    margin: 0px ;
+    padding: 8px 200x 0;
+    width: 50%;
+    align-content: center;
+}
+#nav li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 5px;
+    padding: 0 0 8px;
+    position: relative;
+}
+#nav a {
+    border-radius: 1em 1em 1em 1em;
+    color: #000000; /* color base de la letra */
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+#nav a:hover {
+    background: none repeat scroll 0 0 #000000;
+    color: #0018a0;
+}
+
+#nav ul li:hover a, #nav li:hover li a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #a53e15;
+}
+#nav ul a:hover {
+    background: repeat-x scroll 0 -100px #13007e !important; /*Resaltado*/
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+}
+#nav li:hover > ul {
+    display: block;
+}
+#nav ul {
+    background: repeat-x scroll 0 0 #1100fa;
+    border: 1px solid #0f0f0f;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 185px;
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul a {
+    font-weight: normal;
+}
+#nav ul ul {
+    left: 181px;
+    top: -3px;
+}
+#nav ul li:first-child > a {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px; /*NO TOCAAAR*/
+}
+#nav ul li:last-child > a {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+#nav:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#nav {
+    display: inline-block;
+}
+html[xmlns] #nav {
+    display: block;
+}
+* html #nav {
+    height: 1%;}
+    .imgenes {
+        border: 30px solid transparent;
+        -moz-border-image: url("/files/4127/border.png") 30 30 stretch; /* Old firefox */
+        -webkit-border-image: url("/files/4127/border.png") 30 30 stretch; /* Safari */
+        -o-border-image: url("/files/4127/border.png") 30 30 stretch; /* Opera */
+        border-image: url("/files/4127/border.png") 30 30 stretch;
+      }
